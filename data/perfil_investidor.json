@@ -1,23 +1,23 @@
 {
-  "nome": "João Silva",
-  "idade": 32,
-  "profissao": "Analista de Sistemas",
-  "renda_mensal": 5000.00,
-  "perfil_investidor": "moderado",
-  "objetivo_principal": "Construir reserva de emergência",
-  "patrimonio_total": 15000.00,
-  "reserva_emergencia_atual": 10000.00,
-  "aceita_risco": false,
-  "metas": [
-    {
-      "meta": "Completar reserva de emergência",
-      "valor_necessario": 15000.00,
-      "prazo": "2026-06"
-    },
-    {
-      "meta": "Entrada do apartamento",
-      "valor_necessario": 50000.00,
-      "prazo": "2027-12"
-    }
-  ]
+  "usuario": {
+    "id": "ana_costa",
+    "nome": "Ana Costa",
+    "renda_mensal": 4200,
+    "meta_economia_mensal": 600,
+    "dia_pagamento": 15
+  },
+  "limites_por_categoria": {
+    "Alimentação": 800,
+    "Transporte": 400,
+    "Lazer": 300,
+    "Assinaturas": 150,
+    "Saúde": 300,
+    "Moradia": 500,
+    "Vestuário": 200,
+    "Poupança": 600
+  },
+  "alertas": {
+    "percentual_aviso": 80,
+    "notificar_ao_ultrapassar": true
+  }
 }
