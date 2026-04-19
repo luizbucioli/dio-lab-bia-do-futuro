@@ -1,8 +1,8 @@
 id,data,usuario,mensagem_usuario,resposta_agente,intencao
-1,2026-04-01,ana_costa,Quanto gastei esse mês até agora?,"Até agora você gastou R$ 320,50 em Alimentação e R$ 45,00 em Transporte. Quer ver o resumo completo por categoria?",consulta_resumo
-2,2026-04-05,ana_costa,Estou gastando muito com streaming?,"Você tem R$ 55,90 com Netflix registrado este mês. Seu limite para Assinaturas é R$ 150 — ainda está dentro! Quer que eu te avise quando chegar perto do limite?",consulta_categoria
+1,2026-04-01,ana_costa,Quanto gastei esse mês até agora?,"Até agora você gastou R$ 320.50 em Alimentação e R$ 45.00 em Transporte. Quer ver o resumo completo por categoria?",consulta_resumo
+2,2026-04-05,ana_costa,Estou gastando muito com streaming?,"Você tem R$ 55.90 com Netflix registrado este mês. Seu limite para Assinaturas é R$ 150 — ainda está dentro! Quer que eu te avise quando chegar perto do limite?",consulta_categoria
 3,2026-04-10,ana_costa,Adiciona uma compra na farmácia de 80 reais,Anotado! Registrei R$ 80.00 em Saúde (Farmácia). Seu total em Saúde este mês ficou em R$ 80.00.,registro_transacao
-4,2026-04-16,ana_costa,Recebi meu salário hoje de 4200 reais,Ótimo! Registrei sua entrada de R$ 4.200,00. Vamos planejar o mês? Posso mostrar como distribuir com base nos seus limites de categoria.,registro_entrada
-5,2026-04-20,ana_costa,Quanto ainda posso gastar em alimentação?,"Você já gastou R$ 615,50 em Alimentação. Seu limite é R$ 800 — ainda tem R$ 184,50 disponíveis. Cuidado para não ultrapassar até o fim do mês!",consulta_limite
-6,2026-04-28,ana_costa,Fui ao bar e gastei 95 reais,Registrado! R$ 95,00 em Lazer (Bar). Você já usou R$ 140,00 do seu limite de R$ 300 em Lazer este mês.,registro_transacao
-7,2026-04-30,ana_costa,Consegui guardar os 600 reais esse mês!,"Parabéns! Você atingiu sua meta de economia mensal de R$ 600,00. Continue assim!",meta_atingida
+4,2026-04-16,ana_costa,Recebi meu salário hoje de 4200 reais,Ótimo! Registrei sua entrada de R$ 4.200.00. Vamos planejar o mês? Posso mostrar como distribuir com base nos seus limites de categoria.,registro_entrada
+5,2026-04-20,ana_costa,Quanto ainda posso gastar em alimentação?,"Você já gastou R$ 615.50 em Alimentação. Seu limite é R$ 800 — ainda tem R$ 184.50 disponíveis. Cuidado para não ultrapassar até o fim do mês!",consulta_limite
+6,2026-04-28,ana_costa,Fui ao bar e gastei 95 reais,Registrado! R$ 95.00 em Lazer (Bar). Você já usou R$ 140.00 do seu limite de R$ 300 em Lazer este mês.,registro_transacao
+7,2026-04-30,ana_costa,Consegui guardar os 600 reais esse mês!,"Parabéns! Você atingiu sua meta de economia mensal de R$ 600.00. Continue assim!",meta_atingida
