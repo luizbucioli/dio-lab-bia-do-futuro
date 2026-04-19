@@ -1,42 +1,95 @@
-[
-  {
-    "nome": "Tesouro Selic",
-    "categoria": "renda_fixa",
-    "risco": "baixo",
-    "rentabilidade": "100% da Selic",
-    "aporte_minimo": 30.00,
-    "indicado_para": "Reserva de emergência e iniciantes"
-  },
-  {
-    "nome": "CDB Liquidez Diária",
-    "categoria": "renda_fixa",
-    "risco": "baixo",
-    "rentabilidade": "102% do CDI",
-    "aporte_minimo": 100.00,
-    "indicado_para": "Quem busca segurança com rendimento diário"
-  },
-  {
-    "nome": "LCI/LCA",
-    "categoria": "renda_fixa",
-    "risco": "baixo",
-    "rentabilidade": "95% do CDI",
-    "aporte_minimo": 1000.00,
-    "indicado_para": "Quem pode esperar 90 dias (isento de IR)"
-  },
-  {
-    "nome": "Fundo Multimercado",
-    "categoria": "fundo",
-    "risco": "medio",
-    "rentabilidade": "CDI + 2%",
-    "aporte_minimo": 500.00,
-    "indicado_para": "Perfil moderado que busca diversificação"
-  },
-  {
-    "nome": "Fundo de Ações",
-    "categoria": "fundo",
-    "risco": "alto",
-    "rentabilidade": "Variável",
-    "aporte_minimo": 100.00,
-    "indicado_para": "Perfil arrojado com foco no longo prazo"
-  }
-]
+{
+  "categorias_orcamento": [
+    {
+      "categoria": "Alimentação",
+      "descricao": "Supermercado, restaurantes, delivery, padaria e similares.",
+      "percentual_recomendado": 20,
+      "exemplos": [
+        "Supermercado",
+        "iFood",
+        "Restaurante",
+        "Padaria",
+        "Feira"
+      ]
+    },
+    {
+      "categoria": "Moradia",
+      "descricao": "Aluguel, condomínio, água, luz, internet e gás.",
+      "percentual_recomendado": 30,
+      "exemplos": [
+        "Aluguel",
+        "Conta de Luz",
+        "Conta de Água",
+        "Internet",
+        "Gás"
+      ]
+    },
+    {
+      "categoria": "Transporte",
+      "descricao": "Combustível, transporte público, aplicativos de mobilidade.",
+      "percentual_recomendado": 10,
+      "exemplos": [
+        "Uber",
+        "Gasolina",
+        "Ônibus",
+        "Metrô",
+        "99"
+      ]
+    },
+    {
+      "categoria": "Saúde",
+      "descricao": "Plano de saúde, farmácia, consultas e academia.",
+      "percentual_recomendado": 10,
+      "exemplos": [
+        "Farmácia",
+        "Consulta médica",
+        "Academia",
+        "Plano de saúde"
+      ]
+    },
+    {
+      "categoria": "Lazer",
+      "descricao": "Cinema, bares, viagens e entretenimento em geral.",
+      "percentual_recomendado": 10,
+      "exemplos": [
+        "Cinema",
+        "Bar",
+        "Show",
+        "Viagem"
+      ]
+    },
+    {
+      "categoria": "Assinaturas",
+      "descricao": "Serviços de streaming e assinaturas recorrentes.",
+      "percentual_recomendado": 5,
+      "exemplos": [
+        "Netflix",
+        "Spotify",
+        "Amazon Prime",
+        "Disney+"
+      ]
+    },
+    {
+      "categoria": "Vestuário",
+      "descricao": "Roupas, calçados e acessórios.",
+      "percentual_recomendado": 5,
+      "exemplos": [
+        "Loja de Roupas",
+        "Calçados",
+        "Acessórios"
+      ]
+    },
+    {
+      "categoria": "Poupança",
+      "descricao": "Reserva de emergência e metas financeiras.",
+      "percentual_recomendado": 10,
+      "exemplos": [
+        "Transferência para reserva",
+        "Investimento",
+        "CDB"
+      ]
+    }
+  ],
+  "regra_base": "50-30-20",
+  "descricao_regra": "50% para necessidades (moradia, alimentação, transporte), 30% para desejos (lazer, vestuário, assinaturas), 20% para poupança e metas."
+}
