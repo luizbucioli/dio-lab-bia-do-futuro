@@ -1,11 +1,21 @@
-data,descricao,categoria,valor,tipo
-2025-10-01,Salário,receita,5000.00,entrada
-2025-10-02,Aluguel,moradia,1200.00,saida
-2025-10-03,Supermercado,alimentacao,450.00,saida
-2025-10-05,Netflix,lazer,55.90,saida
-2025-10-07,Farmácia,saude,89.00,saida
-2025-10-10,Restaurante,alimentacao,120.00,saida
-2025-10-12,Uber,transporte,45.00,saida
-2025-10-15,Conta de Luz,moradia,180.00,saida
-2025-10-20,Academia,saude,99.00,saida
-2025-10-25,Combustível,transporte,250.00,saida
+id,data,descricao,categoria,valor,tipo
+1,2026-04-01,Supermercado Extra,Alimentação,320.50,saida
+2,2026-04-03,Uber,Transporte,45.00,saida
+3,2026-04-05,Netflix,Assinaturas,55.90,saida
+4,2026-04-08,Restaurante Sabor & Arte,Alimentação,110.00,saida
+5,2026-04-10,Farmácia Drogasil,Saúde,80.00,saida
+6,2026-04-12,Academia SmartFit,Saúde,99.90,saida
+7,2026-04-14,Posto de Gasolina,Transporte,150.00,saida
+8,2026-04-15,Salário,Renda,4200.00,entrada
+9,2026-04-16,iFood,Alimentação,62.00,saida
+10,2026-04-18,Spotify,Assinaturas,21.90,saida
+11,2026-04-19,Ônibus mensal,Transporte,110.00,saida
+12,2026-04-20,Padaria do Bairro,Alimentação,35.00,saida
+13,2026-04-22,Cinema,Lazer,45.00,saida
+14,2026-04-23,Loja de Roupas,Vestuário,180.00,saida
+15,2026-04-25,Conta de Luz,Moradia,210.00,saida
+16,2026-04-25,Conta de Internet,Moradia,99.90,saida
+17,2026-04-26,Mercadinho local,Alimentação,88.00,saida
+18,2026-04-28,Bar com amigos,Lazer,95.00,saida
+19,2026-04-29,Consulta médica,Saúde,150.00,saida
+20,2026-04-30,Transferência reserva,Poupança,600.00,saida
