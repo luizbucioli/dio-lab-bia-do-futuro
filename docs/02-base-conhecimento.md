@@ -2,12 +2,12 @@
 
 ## Dados Utilizados
 
-| Arquivo | Formato | Para que Serve |
+| Arquivo | Formato | Para que Serve no Finheiro? |
 |---------|---------|---------------------|
-| `historico_atendimento.csv` | CSV | Contextualizar interações anteriores |
-| `perfil_investidor.json` | JSON | Personalizar recomendações |
-| `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil |
-| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
+| `historico_atendimento.csv` | CSV | [Sua descrição aqui] |
+| `perfil_investidor.json` | JSON | [Sua descrição aqui] |
+| `produtos_financeiros.json` | JSON | [Sua descrição aqui] |
+| `transacoes.csv` | CSV | [Sua descrição aqui] |
 
 ---
 
