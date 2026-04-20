@@ -27,6 +27,7 @@ Sim. O arquivo `transacoes.csv` foi expandido para incluir as colunas `categoria
 import json
 import pandas as pd
 
+# CARREGAR DADOS
 historicos = pd.read_csv(open('./data/historico_atendimento.csv'))
 transacoes = pd.read_csv(open('./data/transacoes.csv'))
 perfil = json.load(open('./data/perfil_usuario.json'))
