@@ -65,11 +65,14 @@ dio-lab-bia-do-futuro/
 git clone https://github.com/luizbucioli/dio-lab-bia-do-futuro.git
 cd dio-lab-bia-do-futuro
 
-# Instale as dependências
-pip install -r requirements.txt
+# 1. Instalar dependências
+pip install streamlit pandas requests
 
-# Execute o agente
-python src/app.py
+# 2. Garantir que Ollama está rodando
+ollama serve
+
+# 3. Rodar o app
+streamlit run ./src/app.py
 ```
 
 ---
