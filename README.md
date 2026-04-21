@@ -83,18 +83,6 @@ Descreva como você avalia a qualidade do seu agente:
 
 ---
 
-### 6. Pitch
-
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
-
----
-
 ## Ferramentas Sugeridas
 
 Todas as ferramentas abaixo possuem versões gratuitas:
@@ -117,7 +105,7 @@ Todas as ferramentas abaixo possuem versões gratuitas:
 │
 ├── 📁 data/                          # Dados mockados para o agente
 │   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
+│   ├── perfil_usuario.json        # Perfil do cliente (JSON)
 │   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
 │   └── transacoes.csv                # Histórico de transações (CSV)
 │
@@ -126,16 +114,12 @@ Todas as ferramentas abaixo possuem versões gratuitas:
 │   ├── 02-base-conhecimento.md       # Estratégia de dados
 │   ├── 03-prompts.md                 # Engenharia de prompts
 │   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
 │
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
-│
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
+├── 📁 examples/                      # Referências e exemplos
+|   └── README.md
+|
+└── 📁 src/                           # Código da aplicação
+    └── app.py                        # (exemplo de estrutura)
 ```
 
 ---
@@ -146,4 +130,3 @@ Todas as ferramentas abaixo possuem versões gratuitas:
 2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
 3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
 4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
