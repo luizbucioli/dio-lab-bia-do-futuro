@@ -1,132 +1,89 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 💰 Finhedo — Agente de Controle de Orçamento Pessoal
 
-## Contexto
-
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
-
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
-
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+> Projeto desenvolvido como solução do Lab **"BIA do Futuro"** na [DIO](https://www.dio.me/), com foco em agentes financeiros inteligentes com IA Generativa.
 
 ---
 
-## O Que Você Deve Entregar
+## 🤖 O que é o Finhedo?
 
-### 1. Documentação do Agente
-
-Defina **o que** seu agente faz e **como** ele funciona:
-
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
-
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+**Finhedo** é um agente conversacional de controle de orçamento pessoal. Ele analisa o histórico financeiro do usuário, identifica padrões de gasto e oferece orientações proativas e personalizadas — indo além do simples registro de transações.
 
 ---
 
-### 2. Base de Conhecimento
-
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
-
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
-
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
-
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
-
----
-
-### 3. Prompts do Agente
-
-Documente os prompts que definem o comportamento do seu agente:
-
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
-
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
-
----
-
-### 4. Aplicação Funcional
-
-Desenvolva um **protótipo funcional** do seu agente:
-
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
-
-📁 **Pasta:** [`src/`](./src/)
-
----
-
-### 5. Avaliação e Métricas
-
-Descreva como você avalia a qualidade do seu agente:
-
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
-
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
-
----
-
-## Ferramentas Sugeridas
-
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
-
----
-
-## Estrutura do Repositório
+## 🗂️ Estrutura do Repositório
 
 ```
-📁 lab-agente-financeiro/
+dio-lab-bia-do-futuro/
 │
-├── 📄 README.md
+├── data/                          # Dados mockados do agente
+│   ├── historico_atendimento.csv  # Histórico de interações
+│   ├── perfil_investidor.json     # Perfil financeiro do usuário
+│   ├── produtos_financeiros.json  # Produtos e categorias disponíveis
+│   └── transacoes.csv             # Histórico de transações
 │
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_usuario.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
+├── docs/                          # Documentação completa
+│   ├── 01-documentacao-agente.md  # Caso de uso e arquitetura
+│   ├── 02-base-conhecimento.md    # Estratégia de dados
+│   ├── 03-prompts.md              # Engenharia de prompts
+│   ├── 04-metricas.md             # Métricas e avaliação
+│   └── 05-pitch.md                # Roteiro do pitch
 │
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
+├── src/
+│   └── app.py                     # Código da aplicação
 │
-├── 📁 examples/                      # Referências e exemplos
-|   └── README.md
-|
-└── 📁 src/                           # Código da aplicação
-    └── app.py                        # (exemplo de estrutura)
+└── assets/                        # Imagens e diagramas
 ```
 
 ---
 
-## Dicas Finais
+## 📋 Documentação
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
+| Arquivo | Descrição |
+|---|---|
+| `01-documentacao-agente.md` | Caso de uso, persona e arquitetura do Finhedo |
+| `02-base-conhecimento.md` | Estratégia de dados e base de conhecimento |
+| `03-prompts.md` | System prompt e engenharia de prompts |
+| `04-metricas.md` | Métricas de avaliação e anti-alucinação |
+| `05-pitch.md` | Roteiro de apresentação do agente |
+
+---
+
+## ⚙️ Principais Funcionalidades
+
+- **Análise de gastos** com base no histórico de transações
+- **Alertas proativos** quando categorias de gasto ultrapassam o limite
+- **Sugestões personalizadas** de economia e organização financeira
+- **Perfil do investidor** para recomendações contextualizadas
+- **Anti-alucinação**: respostas seguras, baseadas apenas nos dados fornecidos
+
+---
+
+## 🚀 Como Executar
+
+```bash
+# Clone o repositório
+git clone https://github.com/luizbucioli/dio-lab-bia-do-futuro.git
+cd dio-lab-bia-do-futuro
+
+# Instale as dependências
+pip install -r requirements.txt
+
+# Execute o agente
+python src/app.py
+```
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Python** — lógica do agente
+- **IA Generativa** — motor conversacional
+- **CSV / JSON** — dados mockados estruturados
+
+---
+
+## 👤 Autor
+
+Desenvolvido por **Luiz Bucioli** como entrega do desafio BIA do Futuro — DIO.
+
+[![GitHub](https://img.shields.io/badge/GitHub-luizbucioli-181717?logo=github)](https://github.com/luizbucioli)
