@@ -26,13 +26,3 @@ ollama serve
 # 3. Rodar o app
 streamlit run ./src/app.py
 ```
-
-## Como Rodar
-
-```bash
-# Instalar dependências
-pip install -r requirements.txt
-
-# Rodar a aplicação
-streamlit run app.py
-```
